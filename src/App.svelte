@@ -4,9 +4,11 @@
 
 <main>
 
-  <h1>Hello User!</h1>
+  <section>
+    <h1>Alessio Michelini <span>/ Web Dev</span></h1>
 
-  <Social />
+    <Social />
+  </section>
 </main>
 
 <style>
@@ -21,14 +23,27 @@
     margin: 0 auto;
   }
 
+  section {
+    display: grid;
+    height: 90vh;
+    justify-content: center;
+    align-content: center;
+  }
+
   h1 {
-    color: #ff3e00;
+    color: lightcoral;
     text-transform: uppercase;
     font-size: 4rem;
     font-weight: 100;
-    line-height: 1.1;
+    line-height: 1.5rem;
     margin: 2rem auto;
     max-width: 14rem;
+  }
+
+  h1 > span {
+    opacity: .6;
+    font-size: 3rem;
+    font-weight: 400;
   }
 /* 
   p {

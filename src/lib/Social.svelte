@@ -8,12 +8,12 @@
   const socials: SocialMedia[] = [
     {
       label: 'Linkedin',
-      url: '',
+      url: 'https://www.linkedin.com/in/alessiomichelini/',
       id: 'linkedin',
     },
     {
       label: 'Twitter',
-      url: '',
+      url: 'https://twitter.com/darkmavis1980',
       id: 'twitter'
     }
   ];
@@ -21,7 +21,11 @@
 
 <ul id="social-media">
   {#each socials as social}
-    <li>{social.label}</li>
+    <li id={social.id}>
+      <a href={social.url}>
+        {social.label}
+      </a>
+    </li>
   {/each}
 </ul>
 
@@ -34,5 +38,10 @@
   ul#social-media > li {
     margin: 0;
     display: inline-block;
+    padding: .25rem .75rem;
+  }
+
+  li > a {
+    color: lightcoral;
   }
 </style>
