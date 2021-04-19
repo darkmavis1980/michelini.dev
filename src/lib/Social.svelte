@@ -19,8 +19,20 @@
   ];
 </script>
 
-<div id="social-media">
+<ul id="social-media">
   {#each socials as social}
     <li>{social.label}</li>
   {/each}
-</div>
+</ul>
+
+<style>
+  ul#social-media {
+    margin: 0;
+    padding: 0;
+  }
+
+  ul#social-media > li {
+    margin: 0;
+    display: inline-block;
+  }
+</style>
