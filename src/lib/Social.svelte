@@ -29,7 +29,7 @@
   {/each}
 </ul>
 
-<style>
+<style lang="scss">
   ul#social-media {
     margin: 0;
     padding: 0;
