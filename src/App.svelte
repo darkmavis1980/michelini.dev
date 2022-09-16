@@ -1,12 +1,13 @@
 <script lang="ts">
-  import Social from './lib/Social.svelte'
+  import Social from './lib/Social.svelte';
+  import Card from './lib/Card.svelte';
 </script>
 
 <main>
 
   <section>
     <h1>Alessio Michelini <span>/ Web Dev</span></h1>
-
+    <Card />
     <Social />
   </section>
 </main>
@@ -19,7 +20,10 @@
   main {
     text-align: center;
     padding: 1em;
+    width: 100%;
+    max-width: 800px;
     margin: 0 auto;
+    
   }
 
   section {
