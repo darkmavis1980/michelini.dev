@@ -6,9 +6,8 @@
 <main>
 
   <section>
-    <h1>Alessio Michelini <span>/ Web Dev</span></h1>
     <Card />
-    <Social />
+    <!-- <Social /> -->
   </section>
 </main>
 
