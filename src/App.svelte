@@ -1,6 +1,5 @@
 <script lang="ts">
-  import { onMount, onDestroy } from 'svelte';
-  import ThemeSwitcher from './lib/ThemeSwitcher.svelte';
+  import { onDestroy } from 'svelte';
   import Card from './lib/Card.svelte';
   import './style.css'
   import { themeStore } from './stores/themeStore';
@@ -19,7 +18,6 @@
 
 <main data-theme={currentTheme}>
   <section>
-    <ThemeSwitcher />
     <Card />
   </section>
 </main>

@@ -5,6 +5,13 @@
   --thertiary-color: rgb(173, 231, 146);
   --forth-color: rgb(243, 236, 176);
   --yellow-color: #FED049;
+
+  --theme-selector-size: 12px;
+
+  --theme-color-1: rgb(52, 77, 103);
+  --theme-color-2: rgb(253, 132, 31);
+  --theme-color-3: rgb(195, 248, 255);
+  --theme-color-4: rgb(6, 40, 61);
 }
 
 [data-theme="orange"] {
@@ -19,6 +26,13 @@
   --secondary-color: rgb(171, 217, 255);
   --thertiary-color: rgb(255, 246, 191);
   --forth-color: rgb(255, 235, 173);
+}
+
+[data-theme="sunset"] {
+  --primary-color: rgb(6, 40, 61);
+  --secondary-color: rgb(37, 109, 133);
+  --thertiary-color: rgb(71, 181, 255);
+  --forth-color: rgb(223, 246, 255);
 }
 
 body, html {

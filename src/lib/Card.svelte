@@ -1,8 +1,10 @@
 <script lang="ts">
+  import ThemeSwitcher from './ThemeSwitcher.svelte';
   import Social from './Social.svelte';
 </script>
 
 <div class="card">
+  <ThemeSwitcher />
   <header class="header">
     <img src="images/profile_3.jpg" alt="" class="profile">
     <h1>Alessio Michelini <span>&lt;WebDev /&gt;</span></h1>
@@ -19,6 +21,7 @@
     background-color: white;
     box-shadow: 5px 5px 30px -20px rgba(0,0,0,1);
     width: 100%;
+    position: relative;
   }
 
   .card .header {
