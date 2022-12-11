@@ -10,9 +10,6 @@
 
 
 body {
-  background: rgb(197,249,215);
-  /* background: linear-gradient(235deg, rgba(197,249,215,1) 0%, rgba(247,212,134,1) 50%, rgba(242,122,125,1) 100%) fixed; */
-
   /** 
   https://colorhunt.co/palette/344d676eccafade792f3ecb0
   */
@@ -21,9 +18,9 @@ body {
     var(--teal-color) 30%,
     var(--green-color) 50%,
     var(--beige-color) 100%) fixed;
-
-  /* background: rgb(131,58,180);
-  background: linear-gradient(45deg, rgba(11,59,131,1) 0%, rgba(18,235,159,1) 100%) fixed; */
+    /* background: linear-gradient(180deg,
+    var(--teal-color) 0%,
+    var(--green-color) 30%) fixed; */
   padding: 0;
   font-family: 'Noto Sans', sans-serif;
 }
