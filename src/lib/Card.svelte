@@ -6,7 +6,7 @@
 <div class="card">
   <ThemeSwitcher />
   <header class="header">
-    <img src="images/profile_3.jpg" alt="" class="profile">
+    <img src="images/profile_pic.png" alt="Profile foto" class="profile">
     <h1>Alessio Michelini <span>&lt;WebDev /&gt;</span></h1>
   </header>
   <article>
