@@ -50,12 +50,6 @@
       image: cameraImg,
       altText: 'My photography website',
     },
-    // {
-    //   label: 'Email',
-    //   url: 'mailto:alessio@michelini.dev',
-    //   id: 'email',
-    //   image: emailImg,
-    // }
   ];
 </script>
 
@@ -91,7 +85,7 @@
 
   #social-media > li > a:hover {
     color: white;
-    /* border: 1px solid var(--navy-color); */
+    /* border: 1px solid var(--primary-color); */
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%);
   }
 
