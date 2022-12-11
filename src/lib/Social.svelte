@@ -1,47 +1,96 @@
 <script lang="ts">
+  import linkedinImg from './icons/linkedin.svg';
+  import twitterImg from './icons/twitter.svg';
+  import devtoImg from './icons/devto.svg';
+  import emailImg from './icons/envelop-open.svg';
+  import githubImg from './icons/square-github.svg';
+
   interface SocialMedia {
     label: string;
     url: string;
     id: string;
+    image: string;
   }
 
   const socials: SocialMedia[] = [
     {
+      label: 'Dev.to',
+      url: 'https://dev.to/darkmavis1980',
+      id: 'devto',
+      image: devtoImg,
+    },
+    {
       label: 'Linkedin',
       url: 'https://www.linkedin.com/in/alessiomichelini/',
       id: 'linkedin',
+      image: linkedinImg,
+    },
+    {
+      label: 'GitHub',
+      url: 'https://github.com/darkmavis1980',
+      id: 'github',
+      image: githubImg,
     },
     {
       label: 'Twitter',
       url: 'https://twitter.com/darkmavis1980',
-      id: 'twitter'
-    }
+      id: 'twitter',
+      image: twitterImg,
+    },
+    // {
+    //   label: 'Email',
+    //   url: 'mailto:alessio@michelini.dev',
+    //   id: 'email',
+    //   image: emailImg,
+    // }
   ];
 </script>
 
 <ul id="social-media">
   {#each socials as social}
     <li id={social.id}>
-      <a href={social.url}>
+      <a href={social.url} target="_blank" rel="noreferrer">
+        <img src={social.image} alt={social.label} />
         {social.label}
       </a>
     </li>
   {/each}
 </ul>
 
-<style lang="scss">
-  ul#social-media {
+<style>
+  #social-media {
     margin: 0;
     padding: 0;
   }
 
-  ul#social-media > li {
+  #social-media > li {
     margin: 0;
     display: inline-block;
     padding: .25rem .75rem;
   }
 
-  li > a {
-    color: lightcoral;
+  #social-media > li > a {
+    color: black;
+    display: block;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+  }
+
+  #social-media > li > a:hover {
+    color: white;
+    /* border: 1px solid var(--navy-color); */
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%);
+  }
+
+  #social-media > li > a > img {
+    display: inline;
+  }
+
+  #social-media > li > a:hover > img {
+    filter: invert(100%);
+  }
+
+  #social-media img {
+    max-width: 40px;
   }
 </style>
