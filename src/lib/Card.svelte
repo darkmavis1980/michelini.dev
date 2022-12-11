@@ -28,7 +28,7 @@
   }
 
   .card article {
-    background-color: var(--beige-color);
+    background: linear-gradient(45deg, var(--teal-color) 0%, var(--green-color) 100%);
     padding: 1rem;
     border-bottom-right-radius: 1rem;
     border-bottom-left-radius: 1rem;

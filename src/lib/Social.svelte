@@ -2,6 +2,8 @@
   import linkedinImg from './icons/linkedin.svg';
   import twitterImg from './icons/twitter.svg';
   import devtoImg from './icons/devto.svg';
+  import emailImg from './icons/envelop-open.svg';
+  import githubImg from './icons/square-github.svg';
 
   interface SocialMedia {
     label: string;
@@ -24,11 +26,23 @@
       image: linkedinImg,
     },
     {
+      label: 'GitHub',
+      url: 'https://github.com/darkmavis1980',
+      id: 'github',
+      image: githubImg,
+    },
+    {
       label: 'Twitter',
       url: 'https://twitter.com/darkmavis1980',
       id: 'twitter',
       image: twitterImg,
-    }
+    },
+    // {
+    //   label: 'Email',
+    //   url: 'mailto:alessio@michelini.dev',
+    //   id: 'email',
+    //   image: emailImg,
+    // }
   ];
 </script>
 
@@ -58,14 +72,14 @@
   #social-media > li > a {
     color: black;
     display: block;
-    padding: 0.5rem;
-    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
   }
 
   #social-media > li > a:hover {
     color: white;
     /* border: 1px solid var(--navy-color); */
-    background: linear-gradient(0deg, var(--navy-color) 0%, var(--teal-color) 100%);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%);
   }
 
   #social-media > li > a > img {
