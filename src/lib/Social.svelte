@@ -54,7 +54,7 @@
 <ul id="social-media">
   {#each socials as social}
     <li id={social.id}>
-      <a href={social.url} target="_blank" rel="noreferrer">
+      <a href={social.url} target="_blank" rel="noreferrer" title={social.altText}>
         <img src={social.image} alt={social.altText} />
         {social.label}
       </a>
