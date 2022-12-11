@@ -50,21 +50,18 @@
     display: inline-block;
   }
 
-  .theme-switcher:hover .theme-selector a {
-    transition: all 0.1s;
-    filter: grayscale(0%);
-    margin: 0 0.25rem;
-  }
+  
 
   .theme-selector a {
+    border: 2px solid white;
     text-indent: -9999rem;
     display: inline-block;
-    margin: 0 0.1rem;
+    margin: 0 0.25rem;
     width: var(--theme-selector-size);
     height: var(--theme-selector-size);
-    border-radius: calc(var(--theme-selector-size) / 2);
+    border-radius: calc((var(--theme-selector-size) / 2) + 2px);
     background-color: black;
-    filter: grayscale(100%);
+    
     transition: all 0.1s;
   }
 
@@ -82,5 +79,19 @@
 
   .theme-selector.sunset a {
     background-color: var(--theme-color-4);
+  }
+
+  @media (min-width: 480px) {
+
+    .theme-selector a {
+      filter: grayscale(100%);
+      margin: 0 0.1rem;
+    }
+
+    .theme-switcher:hover .theme-selector a {
+      transition: all 0.1s;
+      filter: grayscale(0%);
+      margin: 0 0.25rem;
+    }
   }
 </style>
