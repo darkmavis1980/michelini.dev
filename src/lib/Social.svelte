@@ -4,6 +4,7 @@
   import devtoImg from './icons/devto.svg';
   import emailImg from './icons/envelop-open.svg';
   import githubImg from './icons/square-github.svg';
+  import cameraImg from './icons/camera-retro.svg';
 
   interface SocialMedia {
     label: string;
@@ -41,6 +42,13 @@
       id: 'twitter',
       image: twitterImg,
       altText: 'My account on twitter',
+    },
+    {
+      label: 'Photography',
+      url: 'https://alessiomichelini.com',
+      id: 'personal',
+      image: cameraImg,
+      altText: 'My photography website',
     },
     // {
     //   label: 'Email',

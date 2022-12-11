@@ -5,7 +5,7 @@
 <div class="card">
   <header class="header">
     <img src="images/profile_3.jpg" alt="" class="profile">
-    <h1>Alessio Michelini <span>/ Web Dev</span></h1>
+    <h1>Alessio Michelini <span>&lt;WebDev /&gt;</span></h1>
   </header>
   <article>
     <Social />
@@ -28,7 +28,7 @@
   .card .header img {
     width: 300px;
     height: 300px;
-    border-radius: 1rem;
+    border-radius: 150px;
   }
 
   .card article {
