@@ -10,6 +10,7 @@
     url: string;
     id: string;
     image: string;
+    altText?: string;
   }
 
   const socials: SocialMedia[] = [
@@ -18,24 +19,28 @@
       url: 'https://dev.to/darkmavis1980',
       id: 'devto',
       image: devtoImg,
+      altText: 'Go see my articles on Dev.to',
     },
     {
       label: 'Linkedin',
       url: 'https://www.linkedin.com/in/alessiomichelini/',
       id: 'linkedin',
       image: linkedinImg,
+      altText: 'Add me on Linkedin',
     },
     {
       label: 'GitHub',
       url: 'https://github.com/darkmavis1980',
       id: 'github',
       image: githubImg,
+      altText: 'Check my code on GitHub',
     },
     {
       label: 'Twitter',
       url: 'https://twitter.com/darkmavis1980',
       id: 'twitter',
       image: twitterImg,
+      altText: 'My account on twitter',
     },
     // {
     //   label: 'Email',
@@ -50,7 +55,7 @@
   {#each socials as social}
     <li id={social.id}>
       <a href={social.url} target="_blank" rel="noreferrer">
-        <img src={social.image} alt={social.label} />
+        <img src={social.image} alt={social.altText} />
         {social.label}
       </a>
     </li>
