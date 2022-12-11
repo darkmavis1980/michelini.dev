@@ -18,13 +18,17 @@
     padding-top: 2rem;
     background-color: white;
     box-shadow: 5px 5px 30px -20px rgba(0,0,0,1);
-    min-width: 1024px;
+    width: 100%;
+  }
+
+  .card .header {
+    padding: 0 3rem;
   }
 
   .card .header img {
     width: 300px;
     height: 300px;
-    border-radius: 50px;
+    border-radius: 1rem;
   }
 
   .card article {
