@@ -1,10 +1,10 @@
 <script lang="ts">
-  import linkedinImg from './icons/linkedin.svg';
-  import twitterImg from './icons/twitter.svg';
-  import devtoImg from './icons/devto.svg';
-  import emailImg from './icons/envelop-open.svg';
-  import githubImg from './icons/square-github.svg';
-  import cameraImg from './icons/camera-retro.svg';
+  import linkedinImg from '../lib/icons/linkedin.svg';
+  import twitterImg from '../lib/icons/twitter.svg';
+  import devtoImg from '../lib/icons/devto.svg';
+  // import emailImg from '../lib/icons/envelop-open.svg';
+  import githubImg from '../lib/icons/square-github.svg';
+  import cameraImg from '../lib/icons/camera-retro.svg';
 
   interface SocialMedia {
     label: string;
