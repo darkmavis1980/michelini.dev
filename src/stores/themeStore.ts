@@ -1,5 +1,5 @@
 import { writable } from 'svelte/store';
 
-export let themeStore = writable({
+export const themeStore = writable({
   theme: 'lime',
 });
