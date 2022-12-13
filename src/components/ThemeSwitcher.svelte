@@ -2,14 +2,7 @@
   import { themeStore } from '../stores/themeStore';
   import { THEMES } from '../config';
 
-  const onChange = ({target}) => {
-    themeStore.update(store => {
-      store.theme = target.value;
-      return store;
-    });
-   }
-
-  const onClick = (theme): void => {
+  const onClick = (theme: string): void => {
     themeStore.update(store => {
       store.theme = theme;
       return store;
@@ -50,8 +43,6 @@
     display: inline-block;
   }
 
-  
-
   .theme-selector a {
     border: 2px solid white;
     text-indent: -9999rem;
@@ -61,7 +52,6 @@
     height: var(--theme-selector-size);
     border-radius: calc((var(--theme-selector-size) / 2) + 2px);
     background-color: black;
-    
     transition: all 0.1s;
   }
 

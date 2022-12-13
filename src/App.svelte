@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onDestroy } from 'svelte';
-  import Card from './lib/Card.svelte';
+  import Card from './components/Card.svelte';
   import './style.css'
   import { themeStore } from './stores/themeStore';
 
