@@ -37,11 +37,11 @@ jobs:
       - run: npm run lint
       - name: Bearer
         uses: bearer/bearer-action@v2
-        with:
-          format: sarif
-          output: results.sarif
-      - name: Upload SARIF file
-        if: always()
-        uses: github/codeql-action/upload-sarif@v2
-        with:
-          sarif_file: results.sarif
+        # with:
+        #   format: sarif
+        #   output: results.sarif
+      # - name: Upload SARIF file
+      #   if: always()
+      #   uses: github/codeql-action/upload-sarif@v2
+      #   with:
+      #     sarif_file: results.sarif
