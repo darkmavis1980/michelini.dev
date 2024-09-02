@@ -41,6 +41,10 @@ jobs:
      
       - name: Bearer
         uses: bearer/bearer-action@v2
+        with:
+          format: rdjson
+          output: rd.json
+          diff: true
         # with:
         #   format: sarif
         #   output: results.sarif
