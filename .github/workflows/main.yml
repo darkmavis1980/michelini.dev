@@ -25,6 +25,9 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
+      - uses: reviewdog/action-setup@v1
+        with:
+          reviewdog_version: latest
 
       # Runs a single command using the runners shell
       - name: Run unit tests
@@ -35,6 +38,7 @@ jobs:
       - run: npm run build
       # - run: npm test
       - run: npm run lint
+     
       - name: Bearer
         uses: bearer/bearer-action@v2
         # with:
