@@ -3,7 +3,7 @@ import React from "react";
 const About = () => {
   const skills = [
     "JavaScript", "TypeScript", "React", "Node.js", 
-    "GraphQL", "RESTful APIs", "PHP", "Python",
+    "GraphQL", "RESTful APIs", "Python",
     "AWS", "Docker", "Kubernetes", "CI/CD",
     "Database Design", "Agile Methodologies", "Team Leadership", "Technical Writing"
   ];
