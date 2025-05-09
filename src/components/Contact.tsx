@@ -89,7 +89,7 @@ const Contact = () => {
             </div>
           </div>
           
-          <form onSubmit={handleSubmit} className="space-y-6 bg-white p-6 rounded-lg shadow-md">
+          {/* <form onSubmit={handleSubmit} className="space-y-6 bg-white p-6 rounded-lg shadow-md">
             <div className="space-y-2">
               <Label htmlFor="name">Name</Label>
               <div className="relative">
@@ -144,7 +144,7 @@ const Contact = () => {
             >
               {loading ? "Sending..." : "Send Message"}
             </Button>
-          </form>
+          </form> */}
         </div>
       </div>
     </section>

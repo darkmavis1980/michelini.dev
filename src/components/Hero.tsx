@@ -12,7 +12,7 @@ const Hero = () => {
             <span className="block mt-3">Developer & Tech Enthusiast</span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
-            With over 20 years of experience in the software development industry, I specialize in creating high-quality, user-friendly applications. I'm passionate about sharing knowledge through my blog and exploring the world through my photography.
+          With over 20 years of experience in the software development industry as a full stack developer, I specialize in creating high-quality, user-friendly applications. My comprehensive background spans both front-end and back-end technologies, allowing me to deliver complete solutions. I'm passionate about sharing knowledge through my blog and exploring the world through my photography.
           </p>
           <div className="flex flex-wrap gap-4 mb-12">
             <Button asChild className="bg-blue-500 hover:bg-blue-600 text-white">
