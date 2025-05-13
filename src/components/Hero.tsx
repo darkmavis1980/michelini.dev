@@ -4,11 +4,11 @@ import { ArrowRight, Github, Linkedin, Instagram } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section id="top" className="min-h-screen flex items-center pt-24 pb-16 bg-gradient-to-br from-blue-50 via-white to-teal-50">
+    <section id="top" className="min-h-screen flex items-center pt-24 pb-16 bg-linear-to-br from-blue-50 via-white to-teal-50">
       <div className="container">
         <div className="max-w-3xl animate-fade-in">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Hey, I'm <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-500">Alessio</span>
+            Hey, I'm <span className="bg-clip-text text-transparent bg-linear-to-r from-blue-500 to-teal-500">Alessio</span>
             <span className="block mt-3">Developer & Tech Enthusiast</span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">

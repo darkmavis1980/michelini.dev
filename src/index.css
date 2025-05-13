@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@config "../tailwind.config.ts";
 
 @layer base {
   :root {
@@ -133,7 +133,7 @@
   }
   
   .gradient-text {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-teal-500 to-blue-400;
+    @apply bg-clip-text text-transparent bg-linear-to-r from-blue-500 via-teal-500 to-blue-400;
   }
   
   .tag-pill {

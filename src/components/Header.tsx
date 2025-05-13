@@ -29,7 +29,7 @@ const Header = () => {
       }`}
     >
       <div className="container flex items-center justify-between">
-        <a href="#top" className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-500">
+        <a href="#top" className="text-2xl font-bold bg-clip-text text-transparent bg-linear-to-r from-blue-500 to-teal-500">
           Michelini<span className="text-blue-500">.dev</span>
         </a>
 
